@@ -1,0 +1,23 @@
+[
+	{
+		"imagen": "img/ojo.jpg",
+		"titulo": "Las versiones Fluent Design de la calculadora y el reloj de Windows llegan para todos los usuarios",
+		"resumen": "Las nuevas versiones de Calculadora y Alarmas y Reloj con Fluent Design ya han empezado a llegar a todos los usuarios. No es la única novedad visual que presenta Microsoft.",
+		"autor": "UrbinaPro",
+		"fecha": "22/05/2017"
+	},
+	{
+		"imagen": "img/ojo.jpg",
+		"titulo": "Un experto de seguridad de Google ha portado Windows Defender a Linux, sí, a Linux",
+		"resumen": "Tavis Ormandy ha portado Windows Defender a Linux. El investigador ha traído el motor de protección antimalware de Microsoft a Linux con el propósito de mostrar lo que puede hacer su nueva herramienta para investigación de seguridad.",
+		"autor": "UrbinaPro",
+		"fecha": "22/05/2017"
+	},
+	{
+		"imagen": "img/ojo.jpg",
+		"titulo": "ExtraTorrent no ha vuelto, no creas en historias de clones",
+		"resumen": "Han empezado a salir clones de ExtraTorrent afirmando estar operados por antiguos miembros del equipo original, pero en realidad se trata de webs que solo imitan su apariencia y usan la misma base de datos de The Pirate Bay.",
+		"autor": "UrbinaPro",
+		"fecha": "22/05/2017"
+	}
+]
