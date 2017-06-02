@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Din Gate</title>
+		<link>https://www.dingate.com/</link>
+		<description>Noticias actuales sobre tecnología</description>
+			
+		<item>
+			<title>Los investigadores de Google vuelven a encontrar un fallo crítico en Windows Defender</title>
+			<link>https://www.dingate.com/new1.html</link>
+			<description>Un nuevo fallo de seguridad hace saltar las alarmas de Windos.</description>
+		</item>
+		<item>
+			<title>Los adblockers en el smartphone, en auge gracias a los países en vías de desarrollo</title>
+			<link>https://www.dingate.com/new2.html</link>
+			<description>Los adblockers se están apoderando del mercado del navegador de bolsillo.</description>
+		</item>
+	</channel>
+</rss>

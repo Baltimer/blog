@@ -1,23 +1,23 @@
 [
 	{
-		"imagen": "img/ojo.jpg",
+		"imagen": "img/new1json.png",
 		"titulo": "Las versiones Fluent Design de la calculadora y el reloj de Windows llegan para todos los usuarios",
 		"resumen": "Las nuevas versiones de Calculadora y Alarmas y Reloj con Fluent Design ya han empezado a llegar a todos los usuarios. No es la única novedad visual que presenta Microsoft.",
 		"autor": "UrbinaPro",
 		"fecha": "22/05/2017"
 	},
 	{
-		"imagen": "img/ojo.jpg",
-		"titulo": "Las versiones Fluent Design de la calculadora y el reloj de Windows llegan para todos los usuarios",
+		"imagen": "img/new2json.png",
+		"titulo": "Ya disponible Devuan 1.0, la primera versión estable del \"Debian sin systemd\"",
 		"resumen": "Las nuevas versiones de Calculadora y Alarmas y Reloj con Fluent Design ya han empezado a llegar a todos los usuarios. No es la única novedad visual que presenta Microsoft.",
 		"autor": "UrbinaPro",
 		"fecha": "22/05/2017"
 	},
 	{
-		"imagen": "img/ojo.jpg",
-		"titulo": "Las versiones Fluent Design de la calculadora y el reloj de Windows llegan para todos los usuarios",
+		"imagen": "img/new3json.png",
+		"titulo": "Cómo aumentar el nivel de protección antivirus de Windows Defender ",
 		"resumen": "Las nuevas versiones de Calculadora y Alarmas y Reloj con Fluent Design ya han empezado a llegar a todos los usuarios. No es la única novedad visual que presenta Microsoft.",
-		"autor": "UrbinaPro",
+		"autor": "Baltimer",
 		"fecha": "22/05/2017"
 	}
 ]

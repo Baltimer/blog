@@ -1,18 +1,27 @@
 $(document).ready(function(){
 	// ON SCROLL LOAD NEWS FUNCTION
-	var firstScroll = false;
-	var secondScroll = false;
+	var firstCharge = false;
+	var secondCharge = false;
+
 	$(window).scroll(function() {
-		if($(window).scrollTop() + $(window).height() == $(document).height()) {
-			if (firstScroll == false) {
+		if($(window).scrollTop() + $(window).height() >= $(document).height() - 1) {
+			if (firstCharge == false) {
 				loadNews();
-				firstScroll = true;
-			} else if (firstScroll == true && secondScroll == false) {
+				firstCharge = true;
+			} else if (firstCharge == true && secondCharge == false) {
 				loadNews2();
-				secondScroll = true;
+				secondCharge = true;
 			}
 		}
-
+	});
+	$('#loadNews').click(function(){
+		if (firstCharge == false) {
+			loadNews();
+			firstCharge = true;
+		} else if (firstCharge == true && secondCharge == false) {
+			loadNews2();
+			secondCharge = true;
+		}
 	});
 
 });
@@ -21,14 +30,13 @@ function loadNews(){
 	$.getJSON("data/1.json",function(json){
 		$.each(json, function(index){
 			$(".contenido-principal").append("<div class='well'><div class='row'><div class='col-xs-12'>"
-			+ "<h2>"+json[index].titulo+"</h2></div></div>"
-			+ "</h2><img alt='ojo' class='img-circle img-responsive' src='"+ json[index].imagen +"'><p>"
-			+ json[index].resumen +"</p><p class='text-info'>"
-			+ json[index].autor +"&emsp;&emsp;<span class='pull-right'>"
-			+ json[index].fecha +"</small></p>");
+			+ "<h2>" + json[index].titulo+"</h2></div></div>"
+			+ "<div class='row'><div class='col-xs-12 col-sm-3'><img alt='ojo' class='img-circle img-responsive' src='"+ json[index].imagen +"'>"
+			+ "<br></div><div class='col-xs-12 col-sm-8'>"+"<p>"+json[index].resumen +"</p><span><b>Autor: </b> <i>"+ json[index].autor +"</i></span>"
+			+ "<span class='pull-right'><b>Fecha:</b> <i>"+ json[index].fecha +"</i></span></div></div></div>");
 		});
-		$(".advertise-vertical").append("<img src='img/publi3.jpg' class='publi-desktop'>");
-		$(".advertise-vertical").append("<img src='img/publi4.jpg' class='publi-desktop'>");
+		$(".advertise-vertical").append("<img src='http://www.publicidadenbuscadores.com/wp-content/uploads/2012/07/msn_bing.jpg' class='publi-desktop'>");
+		$(".advertise-vertical").append("<img src='http://www.thrad.mx/images/consultoria_comunicacion.jpg' class='publi-desktop'>");
 	});
 }
 
@@ -36,12 +44,13 @@ function loadNews2(){
 	$.getJSON("data/2.json",function(json){
 		$.each(json, function(index){
 			$(".contenido-principal").append("<div class='well'><div class='row'><div class='col-xs-12'>"
-			+ "<h2>"+json[index].titulo+"</h2></div></div>"
-			+ "</h2><img class='img-circle img-responsive' src="+ json[index].imagen +"><p>"
-			+ json[index].resumen +"</p><p class='text-info'>"
-			+ json[index].autor +"&emsp;&emsp;<span class='pull-right'>"
-			+ json[index].fecha +"</small></p>");
+			+ "<h2>" + json[index].titulo+"</h2></div></div>"
+			+ "<div class='row'><div class='col-xs-3'><img alt='ojo' class='img-circle img-responsive' src='"+ json[index].imagen +"'>"
+			+ "</div><div class='col-xs-8'>"+"<p>"+json[index].resumen +"</p><span><b>Autor: </b> <i>"+ json[index].autor +"</i></span>"
+			+ "<span class='pull-right'><b>Fecha:</b> <i>"+ json[index].fecha +"</i></span></div></div></div>");
 		});
-		$(".side-bar").append("<img src='img/publi1.jpg' class='publi-desktop'>");
+		$(".advertise-vertical").append("<img src='http://www.publicidadenbuscadores.com/wp-content/uploads/2012/07/msn_bing.jpg' class='publi-desktop'>");
+		$(".advertise-vertical").append("<img src='http://www.thrad.mx/images/consultoria_comunicacion.jpg' class='publi-desktop'>");
 	});
 }
+
