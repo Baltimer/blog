@@ -45,8 +45,8 @@ function loadNews2(){
 		$.each(json, function(index){
 			$(".contenido-principal").append("<div class='well'><div class='row'><div class='col-xs-12'>"
 			+ "<h2>" + json[index].titulo+"</h2></div></div>"
-			+ "<div class='row'><div class='col-xs-3'><img alt='ojo' class='img-circle img-responsive' src='"+ json[index].imagen +"'>"
-			+ "</div><div class='col-xs-8'>"+"<p>"+json[index].resumen +"</p><span><b>Autor: </b> <i>"+ json[index].autor +"</i></span>"
+			+ "<div class='row'><div class='col-xs-12 col-sm-3'><img alt='ojo' class='img-circle img-responsive' src='"+ json[index].imagen +"'>"
+			+ "<br></div><div class='col-xs-12 col-sm-8'>"+"<p>"+json[index].resumen +"</p><span><b>Autor: </b> <i>"+ json[index].autor +"</i></span>"
 			+ "<span class='pull-right'><b>Fecha:</b> <i>"+ json[index].fecha +"</i></span></div></div></div>");
 		});
 		$(".advertise-vertical").append("<img src='http://www.publicidadenbuscadores.com/wp-content/uploads/2012/07/msn_bing.jpg' class='publi-desktop'>");
